@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <div id="topoCanvas"></div>
+  <input id="traceID" type="text" />
+  <button id="searchTopo">click</button>
+  <script>
+__data__ = {
+  "levelCount": 5,
+  "eagleEyeLevelDOs": [
+    {
+      "rpcLevel": 0,
+      "eagleEyeLevelInfos": [
+        {
+          "appId": 37717,
+          "clientAppId": 49580,
+          "rpcLevel": 0,
+          "clientName": "?",
+          "serverName": "top",
+          "fullName": "top:tophost",
+          "originClientName": "(?)",
+          "originServerName": "top:tophost",
+          "rpcType": 0,
+          "service": "Rest://taobao.item.update",
+          "testTL": "",
+          "devTL": ""
+        }
+      ]
+    },
+    {
+      "rpcLevel": 1,
+      "eagleEyeLevelInfos": [
+        {
+          "appId": 34679,
+          "clientAppId": 37717,
+          "rpcLevel": 1,
+          "clientName": "top",
+          "serverName": "tair",
+          "fullName": "(tair@top)",
+          "originClientName": "top:tophost",
+          "originServerName": "(tair@top)",
+          "rpcType": 5,
+          "status": 1,
+          "service": "GET:group_top:3",
+          "testTL": "行禅;行禅",
+          "devTL": "补庵"
+        },
+        {
+          "appId": 46849,
+          "clientAppId": 37717,
+          "rpcLevel": 1,
+          "clientName": "top",
+          "serverName": "sell",
+          "fullName": "sell:sell_top_host",
+          "originClientName": "top:tophost",
+          "originServerName": "sell:sell_top_host",
+          "rpcType": 1,
+          "service": "com.taobao.api.item.ItemService:1.0.1@updateItem~IISSSSS",
+          "testTL": "",
+          "devTL": ""
+        }
+      ]
+    },
+    {
+      "rpcLevel": 2,
+      "eagleEyeLevelInfos": [
+        {
+          "appId": 34679,
+          "clientAppId": 46849,
+          "rpcLevel": 2,
+          "clientName": "sell",
+          "serverName": "tair",
+          "fullName": "(tair@uic)",
+          "originClientName": "sell:sell_top_host",
+          "originServerName": "(tair@uic)",
+          "rpcType": 5,
+          "service": "GET:group_uic:90",
+          "testTL": "行禅;行禅",
+          "devTL": "补庵"
+        },
+        {
+          "appId": 46924,
+          "clientAppId": 46849,
+          "rpcLevel": 2,
+          "clientName": "sell",
+          "serverName": "uicfinal",
+          "fullName": "uicfinal:uicfinalhost",
+          "originClientName": "sell:sell_top_host",
+          "originServerName": "uicfinal:uicfinalhost",
+          "rpcType": 1,
+          "service": "com.taobao.uic.common.service.userdata.UicDataReadService@getData~LSS",
+          "testTL": "",
+          "devTL": ""
+        },
+        {
+          "appId": 47115,
+          "clientAppId": 46849,
+          "rpcLevel": 2,
+          "clientName": "sell",
+          "serverName": "picturecenter",
+          "fullName": "picturecenter:picturecenterhost",
+          "originClientName": "sell:sell_top_host",
+          "originServerName": "picturecenter:picturecenterhost",
+          "rpcType": 1,
+          "service": "com.taobao.picturecenter.client.AntiStealService@antiStealCheck~A",
+          "testTL": "",
+          "devTL": ""
+        },
+        {
+          "appId": 37403,
+          "clientAppId": 46849,
+          "rpcLevel": 2,
+          "clientName": "sell",
+          "serverName": "delivery",
+          "fullName": "delivery:deliveryhost",
+          "originClientName": "sell:sell_top_host",
+          "originServerName": "delivery:deliveryhost",
+          "rpcType": 1,
+          "service": "com.taobao.delivery.common.service.DeliveryService@getTemplateKeyInfo~LLLb",
+          "testTL": "",
+          "devTL": ""
+        },
+        {
+          "appId": 47009,
+          "clientAppId": 46849,
+          "rpcLevel": 2,
+          "clientName": "sell",
+          "serverName": "cmploom",
+          "fullName": "cmploom:cmploomhost",
+          "originClientName": "sell:sell_top_host",
+          "originServerName": "cmploom:cmploomhost",
+          "rpcType": 1,
+          "service": "com.taobao.ifd.prepose.service.PreposeRuleService@execute~P",
+          "testTL": "",
+          "devTL": ""
+        },
+        {
+          "appId": 47010,
+          "clientAppId": 46849,
+          "rpcLevel": 2,
+          "clientName": "sell",
+          "serverName": "itemcenter",
+          "fullName": "itemcenter:ic_L1_host",
+          "originClientName": "sell:sell_top_host",
+          "originServerName": "itemcenter:ic_L1_host",
+          "rpcType": 1,
+          "service": "com.taobao.item.service.SpuService@getSpu~lS",
+          "testTL": "",
+          "devTL": ""
+        }
+      ]
+    },
+    {
+      "rpcLevel": 3,
+      "eagleEyeLevelInfos": [
+        {
+          "appId": 49578,
+          "clientAppId": 46924,
+          "rpcLevel": 3,
+          "clientName": "uicfinal",
+          "serverName": "db",
+          "fullName": "(db@uic_main)",
+          "originClientName": "uicfinal:uicfinalhost",
+          "originServerName": "(db@uic_main)",
+          "rpcType": 4,
+          "service": "TDDL_QUERY@uic_main_0011",
+          "testTL": "",
+          "devTL": ""
+        },
+        {
+          "appId": 34679,
+          "clientAppId": 47115,
+          "rpcLevel": 3,
+          "clientName": "picturecenter",
+          "serverName": "tair",
+          "fullName": "(tair@market2)",
+          "originClientName": "picturecenter:picturecenterhost",
+          "originServerName": "(tair@market2)",
+          "rpcType": 5,
+          "service": "GET:group_market2:334",
+          "testTL": "行禅;行禅",
+          "devTL": "补庵"
+        },
+        {
+          "appId": 47069,
+          "clientAppId": 47010,
+          "rpcLevel": 3,
+          "clientName": "itemcenter",
+          "serverName": "xforest",
+          "fullName": "xforest:xforesthost",
+          "originClientName": "itemcenter:ic_L1_host",
+          "originServerName": "xforest:xforesthost",
+          "rpcType": 1,
+          "service": "com.taobao.forest.service.RemoteWriteService:1.0.0.xforest@addStdPropertyValueOrSubWithoutCPV~iilS",
+          "testTL": "",
+          "devTL": ""
+        },
+        {
+          "appId": 46924,
+          "clientAppId": 47010,
+          "rpcLevel": 3,
+          "clientName": "itemcenter",
+          "serverName": "uicfinal",
+          "fullName": "uicfinal:uicfinalhost",
+          "originClientName": "itemcenter:ic_L1_host",
+          "originServerName": "uicfinal:uicfinalhost",
+          "rpcType": 1,
+          "service": "com.taobao.uic.common.service.userdata.UicDataReadService@getData~LSS",
+          "testTL": "",
+          "devTL": ""
+        },
+        {
+          "appId": 46747,
+          "clientAppId": 47010,
+          "rpcLevel": 3,
+          "clientName": "itemcenter",
+          "serverName": "justice",
+          "fullName": "justice:justice_real_host",
+          "originClientName": "itemcenter:ic_L1_host",
+          "originServerName": "justice:justice_real_host",
+          "rpcType": 1,
+          "service": "com.taobao.justice.hsf.IvmService@run~P",
+          "testTL": "",
+          "devTL": ""
+        },
+        {
+          "appId": 41520,
+          "clientAppId": 47010,
+          "rpcLevel": 3,
+          "clientName": "itemcenter",
+          "serverName": "tfs",
+          "fullName": "(tfs)",
+          "originClientName": "itemcenter:ic_L1_host",
+          "originServerName": "(tfs)",
+          "rpcType": 15,
+          "service": "tfs@SaveFile",
+          "testTL": "",
+          "devTL": ""
+        },
+        {
+          "appId": 47135,
+          "clientAppId": 47010,
+          "rpcLevel": 3,
+          "clientName": "itemcenter",
+          "serverName": "notify",
+          "fullName": "(notify@ic-common)",
+          "originClientName": "itemcenter:ic_L1_host",
+          "originServerName": "(notify@ic-common)",
+          "rpcType": 3,
+          "service": "Notify@send~ic-common:NM-item-edit:P-IC-Item",
+          "testTL": "",
+          "devTL": ""
+        }
+      ]
+    },
+    {
+      "rpcLevel": 4,
+      "eagleEyeLevelInfos": [
+        {
+          "appId": 34679,
+          "clientAppId": 47069,
+          "rpcLevel": 4,
+          "clientName": "xforest",
+          "serverName": "tair",
+          "fullName": "(tair@market1)",
+          "originClientName": "xforest:xforesthost",
+          "originServerName": "(tair@market1)",
+          "rpcType": 5,
+          "service": "GET:group_market1:213",
+          "testTL": "行禅;行禅",
+          "devTL": "补庵"
+        },
+        {
+          "appId": 49578,
+          "clientAppId": 47069,
+          "rpcLevel": 4,
+          "clientName": "xforest",
+          "serverName": "db",
+          "fullName": "(db@ali_category)",
+          "originClientName": "xforest:xforesthost",
+          "originServerName": "(db@ali_category)",
+          "rpcType": 4,
+          "service": "TDDL_QUERY@ali_category",
+          "testTL": "",
+          "devTL": ""
+        }
+      ]
+    }
+  ],
+  "eagleEyeLinkDOs": [
+    {
+      "source": "?",
+      "target": "top",
+      "sourceId": 49580,
+      "targetId": 37717,
+      "rpcLevel": 0
+    },
+    {
+      "source": "top",
+      "target": "tair",
+      "sourceId": 37717,
+      "targetId": 34679,
+      "rpcLevel": 1
+    },
+    {
+      "source": "top",
+      "target": "sell",
+      "sourceId": 37717,
+      "targetId": 46849,
+      "rpcLevel": 1
+    },
+    {
+      "source": "sell",
+      "target": "tair",
+      "sourceId": 46849,
+      "targetId": 34679,
+      "rpcLevel": 2
+    },
+    {
+      "source": "sell",
+      "target": "uicfinal",
+      "sourceId": 46849,
+      "targetId": 46924,
+      "rpcLevel": 2
+    },
+    {
+      "source": "sell",
+      "target": "picturecenter",
+      "sourceId": 46849,
+      "targetId": 47115,
+      "rpcLevel": 2
+    },
+    {
+      "source": "sell",
+      "target": "delivery",
+      "sourceId": 46849,
+      "targetId": 37403,
+      "rpcLevel": 2
+    },
+    {
+      "source": "sell",
+      "target": "cmploom",
+      "sourceId": 46849,
+      "targetId": 47009,
+      "rpcLevel": 2
+    },
+    {
+      "source": "sell",
+      "target": "itemcenter",
+      "sourceId": 46849,
+      "targetId": 47010,
+      "rpcLevel": 2
+    },
+    {
+      "source": "uicfinal",
+      "target": "db",
+      "sourceId": 46924,
+      "targetId": 49578,
+      "rpcLevel": 3
+    },
+    {
+      "source": "picturecenter",
+      "target": "tair",
+      "sourceId": 47115,
+      "targetId": 34679,
+      "rpcLevel": 3
+    },
+    {
+      "source": "delivery",
+      "target": "db",
+      "sourceId": 37403,
+      "targetId": 49578,
+      "rpcLevel": 3
+    },
+    {
+      "source": "itemcenter",
+      "target": "tair",
+      "sourceId": 47010,
+      "targetId": 34679,
+      "rpcLevel": 3
+    },
+    {
+      "source": "itemcenter",
+      "target": "db",
+      "sourceId": 47010,
+      "targetId": 49578,
+      "rpcLevel": 3
+    },
+    {
+      "source": "itemcenter",
+      "target": "xforest",
+      "sourceId": 47010,
+      "targetId": 47069,
+      "rpcLevel": 3
+    },
+    {
+      "source": "itemcenter",
+      "target": "uicfinal",
+      "sourceId": 47010,
+      "targetId": 46924,
+      "rpcLevel": 3
+    },
+    {
+      "source": "itemcenter",
+      "target": "justice",
+      "sourceId": 47010,
+      "targetId": 46747,
+      "rpcLevel": 3
+    },
+    {
+      "source": "itemcenter",
+      "target": "tfs",
+      "sourceId": 47010,
+      "targetId": 41520,
+      "rpcLevel": 3
+    },
+    {
+      "source": "itemcenter",
+      "target": "notify",
+      "sourceId": 47010,
+      "targetId": 47135,
+      "rpcLevel": 3
+    },
+    {
+      "source": "xforest",
+      "target": "tair",
+      "sourceId": 47069,
+      "targetId": 34679,
+      "rpcLevel": 4
+    },
+    {
+      "source": "xforest",
+      "target": "db",
+      "sourceId": 47069,
+      "targetId": 49578,
+      "rpcLevel": 4
+    },
+    {
+      "source": "uicfinal",
+      "target": "db",
+      "sourceId": 46924,
+      "targetId": 49578,
+      "rpcLevel": 4
+    },
+    {
+      "source": "justice",
+      "target": "tair",
+      "sourceId": 46747,
+      "targetId": 34679,
+      "rpcLevel": 4
+    }
+  ],
+  "isSuccess": true
+}
+  </script>
+  <script src="./dist/bundle.js"></script>
+</body>
+</html>

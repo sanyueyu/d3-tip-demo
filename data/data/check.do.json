@@ -1,0 +1,76 @@
+{
+  "success": true,
+    "msg": null,
+    "value": {
+        "malldetailskip": {
+            "name": "malldetailskip",
+            "status": 1,
+            "link": "/data/unavailable.htm?appName=malldetailskip",
+            "atpList": [
+                {
+                    "code": "err",
+                    "msg": "错误",
+                    "source": 2,
+                    "client": "malldetailskip",
+                    "server": "malldetailskip",
+                    "service": "FlowException#default##tc"
+                }
+            ]
+        },
+        "tair": {
+            "name": "tair",
+            "status": 1,
+            "link": "/data/unavailable.htm?appName=tair",
+            "atpList": [
+                {
+                    "code": "connerr",
+                    "msg": "连接错误",
+                    "source": 2,
+                    "client": "securitymatrix",
+                    "server": "tair@mdbcomm",
+                    "service": "GET:group_mdbcomm:252"
+                },
+                {
+                    "code": "connerr",
+                    "msg": "连接错误",
+                    "source": 2,
+                    "client": "securitymatrix",
+                    "server": "tair@mdbcomm",
+                    "service": "GET:group_mdbcomm:419"
+                },
+                {
+                    "code": "connerr",
+                    "msg": "连接错误",
+                    "source": 2,
+                    "client": "ump",
+                    "server": "tair@market1",
+                    "service": "GET:group_market1:6:700e2b98ef8f46c1"
+                },
+                {
+                    "code": "connerr",
+                    "msg": "连接错误",
+                    "source": 2,
+                    "client": "carts",
+                    "server": "tair@market1",
+                    "service": "INVALID:group_market1:23:be9865a19e69429d"
+                },
+                {
+                    "code": "connerr",
+                    "msg": "连接错误",
+                    "source": 2,
+                    "client": "securitymatrix",
+                    "server": "tair@mdbcomm",
+                    "service": "INCDEC:group_mdbcomm:252"
+                },
+                {
+                    "code": "connerr",
+                    "msg": "连接错误",
+                    "source": 2,
+                    "client": "cndps",
+                    "server": "tair@market2",
+                    "service": "PUT:group_market2:620"
+                }
+            ]
+        }
+    }
+}
